@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Homework 4: Javascript Quiz</title>
+
+    <link rel="stylesheet" href="./css/styles.css" />
+  </head>
+  <body>
+    <header>
+      <div class="Highscores">
+        <h2><a href="">Highscores</a></h2>
+      </div>
+      <div class="timer">
+        <h2>Timer: <span id="timercount">0</span></h2>
+      </div>
+    </header>
+    <main>
+
+      <div id="startbutton">
+        <h1>Coding Quiz</h1>
+        <button id="start">Start</button>
+      </div>
+
+      <div id="questions-card" class="hide">
+        <div id="question"></div>
+        <div id="options"></div>
+        <div id="result"></div>
+      </div>
+
+      <div id="scoresheet" class="hide">
+        <div id="score">
+          <h2><span id="correct">Score: 0</span></h2>
+        </div>
+        <p>
+          <input type="text" id="initials" />
+          <button id="submit">Submit</button>
+        </p>
+      </div>
+
+    </main>
+    <script src="./js/questions.js"></script>
+    <script src="./js/quiz.js"></script>
+  </body>
+</html>
