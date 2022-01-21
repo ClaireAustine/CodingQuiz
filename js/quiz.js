@@ -86,7 +86,6 @@ function highScores() {
     initials: initials,
     score: time,
   };
-
   hsArr.push(userScore);
   localStorage.setItem("highscores", JSON.stringify(hsArr));
   submitImput.setAttribute("class", "hide");
