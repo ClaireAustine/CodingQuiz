@@ -1,0 +1,12 @@
+:root {
+    --light:#d3fccd;
+    --lime:#78f845;
+    --mint:#8bf899;
+    --grass:#008031;
+}
+
+body{
+    background-color: var(--light);
+    color:var(--grass);
+    font-family: Arial, Helvetica, sans-serif;
+}

@@ -1,0 +1,24 @@
+/* CSS Reset */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    position: relative;
+}
+
+.hide{
+    display: none;
+}
+
+a:link,
+a:active,
+a:visited{
+    color: var(--grass);
+    text-decoration: none;
+}
+
+a:hover{
+    color: var(--grass);
+    text-decoration: none;
+    font-style: italic;
+}
