@@ -18,6 +18,7 @@ var tryagainButton = document.querySelector("#tryagainbutton")
 var index = 0;
 
 
+
 function startQuiz() {
   startContainer.setAttribute("class", "hide");
   questionContainer.removeAttribute("class");
@@ -33,6 +34,7 @@ function startQuiz() {
   timercount.textContent = time;
   viewQuestions();
 }
+
 
 function viewQuestions() {
   var currentQ = questions[index];
@@ -57,9 +59,6 @@ function checkAnswer() {
 
     timercount.textContent = time;
   }
-  if (time < 0) {
-    time = 0;
-  }
   index++;
 
   if (index === questions.length) {
@@ -69,12 +68,15 @@ function checkAnswer() {
   }
 }
 
+if (time < 0) {
+  time = 0;
+}
+
 function endQuiz() {
   clearInterval(timer);
   questionContainer.setAttribute("class", "hide");
   scoreSheet.removeAttribute("class");
   scorecount.textContent= time
-  //tryagainButton.removeAttribute("class");
 }
 
 function highScores() {
@@ -93,8 +95,6 @@ function highScores() {
 
 
 
-// display high scores when highscores is clicked
-
 /*
  * questions.js is loaded in the HTML before quiz.js
  * It creates a global variable called questions that contains starter questions.
@@ -104,5 +104,4 @@ function highScores() {
  */
 startButton.addEventListener("click", startQuiz);
 submitButton.addEventListener("click", highScores);
-//tryagainButton.addEventListener("click", startQuiz);
 

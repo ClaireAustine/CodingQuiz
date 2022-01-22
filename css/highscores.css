@@ -9,4 +9,17 @@ body{
     background-color: var(--light);
     color:var(--grass);
     font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    flex-direction: column;
 }
+
+footer{
+    font-size: 150%;
+    font-weight: bold;
+    margin-top: 50px;
+    margin-left: 10px;
+};
+
+#initials-score {
+    list-style-type: upper-roman;
+};

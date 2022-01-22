@@ -30,7 +30,21 @@ main {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    margin-top: 20px;
 
+}
+
+main h1{
+    font-size: 400%;
+}
+
+#start{
+    font-size: 200%;
+    font-weight: bold;
+    background-color: var(--mint);
+    color: var(--grass);
+    border-radius: 30%;
+    border: none;
 }
 
 #question{
