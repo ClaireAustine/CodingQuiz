@@ -21,6 +21,7 @@ body {
     position: absolute;
     top: 15px;
     right: 15px;
+    margin-bottom: 15px;
 }
 
 main {
@@ -54,6 +55,7 @@ main h1{
 }
 #question{
     font-size: 150%;
+    margin: 15px;
 }
 
 #options {
