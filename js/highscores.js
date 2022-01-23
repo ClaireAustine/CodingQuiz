@@ -2,11 +2,13 @@ var highScores = document.querySelector("#highscores");
 var hsArr = JSON.parse(localStorage.getItem("highscores"));
 var initialsScore = document.querySelector("#initials-score");
 
- hsArr.forEach(function(score){
-    var intitalsAndScore = document.createElement("li");
-    intitalsAndScore.textContent = score.initials+ " " + score.score;
+hsArr.sort(function(a, b){return b.score - a.score});
 
-    initialsScore.append(intitalsAndScore);
+ hsArr.forEach(function(score){
+    var initialsAndScore = document.createElement("li");
+    initialsAndScore.textContent = score.initials+ " " + score.score;
+    initialsScore.append(initialsAndScore);
+    
 })
 
 //sort by greatest score -->look up

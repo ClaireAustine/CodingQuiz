@@ -13,9 +13,8 @@ body {
 
 .highscores{
     font-size: 110%;
-    position: absolute;
-    left: 15px;
-    top: 15px
+    left: 20px;
+    top: 20px
 }
 .timer{
     font-size: 200%;
@@ -38,15 +37,21 @@ main h1{
     font-size: 400%;
 }
 
+#startbutton{
+    text-align: center;
+}
 #start{
     font-size: 200%;
     font-weight: bold;
     background-color: var(--mint);
     color: var(--grass);
-    border-radius: 30%;
+    border-radius: 50%;
     border: none;
+    width: 100%;
 }
-
+#start:hover{
+    background-color: var(--lime);
+}
 #question{
     font-size: 150%;
 }
@@ -54,5 +59,15 @@ main h1{
 #options {
     display: flex;
     flex-direction: column;
+}
+#options button{
     font-size: 120%;
+    background-color: var(--mint);
+    color: var(--grass);
+    border: none;
+    margin: 2px;
+}
+
+#options button:hover{
+    background-color: var(--lime);
 }
